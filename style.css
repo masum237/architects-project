@@ -102,7 +102,47 @@ main {
   font-weight: 400;
   line-height: 26px;
 }
-
+.facts {
+  padding: 50px 120px;
+}
+.facts-title {
+  font-size: 2.3rem;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+.facts-description {
+  color: #727272;
+  width: 520px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.facts-card-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.facts-card-container .card {
+  text-align: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  padding: 60px 30px 0 30px;
+  width: 200.831px;
+  height: 200.831px;
+}
+.facts-card-container .card-stats {
+  font-size: 2.5rem;
+  color: #424242;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.facts-card-container .card-title {
+  font-size: 1.2rem;
+  color: #727272;
+  font-weight: 600;
+  margin-top: 5px;
+}
 /* responsive */
 /* 
 .
@@ -116,11 +156,13 @@ main {
     padding: 10px;
   }
   nav,
-  .teams-container {
+  .teams-container,
+  .facts-card-container {
     flex-direction: column;
     gap: 10px;
   }
-  .teams-description {
+  .teams-description,
+  .facts-description {
     width: 350px;
   }
   .teams-img-container {
@@ -129,9 +171,22 @@ main {
   .teams-content {
     padding: 0;
   }
+  .facts {
+    padding: 0px 0px 0px 50px;
+  }
 }
 
-@media screen and (min-width: 576px) and (max-width: 960px) {
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  nav,
+  .teams-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  header {
+    padding: 50px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
   nav,
   .teams-container {
     flex-direction: column;
