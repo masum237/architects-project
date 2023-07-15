@@ -143,6 +143,28 @@ main {
   font-weight: 600;
   margin-top: 5px;
 }
+.sponser {
+  text-align: center;
+  align-content: center;
+}
+.sponser-title {
+}
+.sponser-description {
+  color: #727272;
+  text-align: center;
+  font-weight: 400;
+  line-height: 26px;
+}
+.sponser-img img {
+  width: 165px;
+  gap: 20px;
+}
+.sponser-img {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 /* responsive */
 /* 
 .
@@ -157,7 +179,8 @@ main {
   }
   nav,
   .teams-container,
-  .facts-card-container {
+  .facts-card-container,
+  .sponser-img {
     flex-direction: column;
     gap: 10px;
   }
@@ -178,7 +201,8 @@ main {
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
   nav,
-  .teams-container {
+  .teams-container,
+  .sponser-img {
     flex-direction: column;
     gap: 20px;
   }
@@ -188,7 +212,8 @@ main {
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   nav,
-  .teams-container {
+  .teams-container,
+  .sponser-img {
     flex-direction: column;
     gap: 20px;
   }
